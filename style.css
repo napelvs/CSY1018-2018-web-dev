@@ -1,0 +1,506 @@
+/* Google Fonts import URL's, so they can be used on the website */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+
+/* General settings for the entire page */
+body {
+    margin: 0; /* Entire website has 0 margn */
+    padding: 0; /* Entire website has 0 padding */
+    background: #ffffff; /* The entire website's background color is white */
+    font-family: 'Open Sans', sans-serif; /* General font-family if the font-family is not specified*/
+
+
+}
+
+/* <<<<<<< LOGO >>>>>>> */ 
+header {
+    position: relative; /* Positioning */
+    text-align: center; /* The logo stays centered */
+}
+
+#logo {
+    max-width: 15%; /* The biggest size the logo can get is 15% of the logo's size */
+    min-width: 150px; /* The smalllest size the logo can get is 150px */
+    margin-bottom: 15px; /* 15px margin from the 'page-bar' */
+    margin-top: 15px; /* 15px margin from the top of the website */
+}
+
+/* <<<<<<< SIDE BAR >>>>>>> */ 
+
+/* Sidebar Positioning */
+
+#home-icon, #reviews-icon, #glossary-icon, 
+#jobs-icon, #tutorials-icon {
+    float:right; /* All icons float to the right of the sidebar, so if it is on the desktop mode you can see the icons */
+}
+
+/* Sidebar Menu settings */
+#sidebar {
+    position: relative; /* Positioning */
+    float: left; /* Floating left so it can arrange and respond to the other elements on the website properly */
+    font-family: 'Open Sans', sans-serif; /* Font family used for the entire sidebar text*/
+    width: 10.50em; /* The width of thr sidebar */
+    transition: ease-in; /* Transition for the hover */
+}
+
+#sidebar a {
+    color: white; /* Font color */
+    font-size: 1.375em; /* Font-size of the sidebar */
+    display: block; /* All the 'a' tags are displayed in a block */
+    max-width: 100%; /* */
+    padding: 12px; /* All around padding of every bar */
+    text-decoration: none; /* Remove the underline from the 'a' tags */
+    margin: 8px 0; /* Left margin is 8px and the right one is 0px*/
+    border-radius: 10px; /* In order to achieve round corners, I set the radius to 10px */
+    margin-left: -5.250em; /* Bar is hidden, so only the icon can be visible*/
+    transition: 0.35s; /* Time of the trasition from start to end */
+    background:#808e9b; 
+}
+
+/* Menu settings on hover */
+#sidebar a:hover {
+    margin-left: 0; /* On hover, the bar goes from margin-left: -5.250em to 0 in 0.35s using a ease in transition */
+}
+
+/* Selected webpage stays active in order 
+to be able to see the name of the page */
+#sidebar .active {
+    margin-left: 0;
+    font-weight: bold;
+
+} 
+
+/* <<<<<<<<<<< BAR CONTAINING SEARCH BOX AND DROPDOWN MENU >>>>>>>>>>> */
+.page-bar {
+    position: relative; /* Positioning */
+    height: 50px; /* Height of the bar */
+    background: #1e272e; /* Background color of the page bar */
+    margin-bottom: 10px; /* Margin between the page bar and the content under it */
+}
+
+#dropdown-menu {
+    color: white; /* Color of the icon */
+    float: left; /* Floats to the left of the pagebar*/
+    font-size: 30px; /* Size of the icon */
+    margin-top: 10px; /* I use margin-top: 10px so I achieve a centered icon */
+    margin-left: 5px; /* Distance from the left side*/
+    cursor: pointer; /* On hover the cursor gets the pointer icon instead of the default one*/
+    transition: ease-in-out; /* Transition effect*/
+}
+
+#dropdown-menu:hover {
+    transition: 0.2s; /* Time of the transition from start to end */
+    transform: rotate(90deg); /* On hover the icon rotates 90 degrees */
+}
+
+/* <<<<<<< SEARCH BAR >>>>>>>> */ 
+/* SEARCH BOX */
+.search-box {
+    position: relative; /* Positioning */
+    background: white; /* Background color is white */
+    max-width: 200px;  /* The biggest the entire search box can be is 200px; */
+    height: 40px; /* Height of the search box is 40px */
+    border-radius: 40px; /* The radius of the border is 40px to obtain round corners */
+    top: 5px; /* The distance from the top of the pagebar is 5px so the bar remains centered in it */
+    right: 10px; /* Distance from the right side */
+    float: right; /* The search box floats right, while the dropdown menu floats left, so it has a proper order */
+}
+
+/* SEARCH BUTTON */
+.search-btn {
+    float: right; /* The search button floats on the right of the search box */
+    width: 40px; /* The search button has a 40px width  */
+    height: 40px; /* The search button has a 40px height, this way the search button is a square */
+    border-radius: 50%; /* Applying a 50% border radius to round the corners of the square, transforms it into a circle  */
+    display: flex; /* The icon has a display flex */
+    justify-content: center; /* The icon is horizontal centered */
+    align-items: center; /* The icon is vertical centered */
+    transition: 0.4s; /* Transition animation time  */
+    color: #1e272e; /* Icon color */
+    cursor: pointer; /* On hover the cursor gets the pointer icon instead of the default one*/
+}
+
+/* SEARCH TEXT INPUT */
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 120px;
+}
+/* Text before the user inputs any text inside the search box */ 
+::-webkit-input-placeholder {
+    color: black; /* The placeholder color is black */
+}
+
+/* <<<<<<<<<<<< FOOTER >>>>>>>>>>>>> */ 
+footer {
+    position: relative; 
+    bottom:0; /* Footer always stays on the bottom of the page */ 
+    background:#1e272e;
+    width: 100%;
+    margin-top: 20px;
+    clear: both; /* Allows floating items */ 
+}
+
+/* CONTAINER SETTINGS */ 
+
+#body-container {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    
+}
+
+/* Contact-Us left block */ 
+#contact-us {
+    display: inline-block;
+    color: white;
+    max-width: 400px;
+}
+/* Links style */ 
+#contact-us a {
+    color: white;
+    text-decoration: none;
+}
+/* Icons style in order to achieve a modern look */ 
+#phone-icon, #maps-icon, #envelope-icon {
+    padding: 6px;
+    font-size: 30px;
+}
+
+/* Contact-Us center block */ 
+#quick-links  {
+    color: white;
+    max-width: 400px;
+}
+
+/* Quick Links center block links*/ 
+#quick-links a {
+    display: block;
+    color: lightblue;
+    text-decoration: none;
+}
+/* On mouse hover the links are underlined */ 
+#quick-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media right block */ 
+#social-media {
+    display: inline-block;
+    color: white;
+    max-width: 400px;
+}
+
+#social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+#social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media right block ICONS */ 
+/* FACEBOOK */ 
+/* To achieve modern looking round icon */ 
+#facebook-icon {
+    border-radius: 25%;
+    padding: 6px;
+    font-size: 30px;
+}
+/* On mouse hover the background changes to the Facebook's blue color */ 
+#facebook-icon:hover {
+    background-color: #39569c;
+}
+
+/* TWITTER */ 
+#twitter-icon {
+    border-radius: 25%;
+    padding: 6px;
+    font-size: 30px;
+}
+
+#twitter-icon:hover {
+    background-color: #00acee;
+}
+
+/* PINTEREST */ 
+#pinterest-icon {
+    border-radius: 25%;
+    padding: 6px;
+    font-size: 30px;
+}
+
+#pinterest-icon:hover {
+    background-color: #c8232c;   
+}
+
+/* CONTENT SETTINGS */
+
+/* I took someone else's code, here is the link to it, 
+but making changes to fit my website properly: https://codepen.io/mcraiganthony/pen/NxGxqm?editors=1100
+I used the cards properties for the index.html page for the news cards as well as for the videos on the tutorials.html page */
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+/* Image settings */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+ 
+.cards {
+  display: flex; 
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/* Space between each card */
+.cards__item {
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 100%;
+}
+
+.card-website-intro {
+    max-width: 1800px;
+    flex-direction: row;
+}
+
+.card__content {
+  display: flex;
+  flex: 1 2 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card_image_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+}
+
+.card__title {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Youtube Tutorials Responsive Video */
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+  
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+
+/* <<<<<<<<<<<<<<< REVIEWS/JOBS style >>>>>>>>>>>>>>> here the style are the same for both reviews and jobs */
+/* Container div that holds all the other components */
+
+.reviews_container, 
+.jobs_container {
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 25px;
+}
+/* Styling for the titles */
+.reviews_title, 
+.jobs_title {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    padding-bottom: 1.25rem
+}
+
+.jobs_intro,
+.reviews_intro {
+    font-size: 36px;
+    text-align: center;
+}
+/* Stylling for the whole text, except titles */
+.reviews_text, 
+.jobs-text {
+    margin: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* <<<<<<<<< TABLE STYLE >>>>>>>>> */
+.table-container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.table-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.glossary-table {
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    padding-left: 10px;
+    width: 90%
+    
+}
+  
+td, th {
+    border: 1px solid #999;
+    padding: 1rem;
+    text-align: left;
+}
+
+/* <<<<<<< TABLET MODE >>>>>>>> */ 
+@media (max-width: 1024px) {
+    #sidebar {
+        display: none;
+    }
+
+    .search-box {
+        position: relative;
+        max-width: 150px;
+        top: 5px;
+        float: right;
+    }
+    
+    .search-box:hover > .search-txt{
+        width: 95px;
+        padding: 0 6px;
+    }
+    
+    .search-box:hover > .search-btn {
+        background: #1e272e;
+        color: white;
+    }
+        
+    .search-txt {   
+        width: 0px;
+        padding: 0;
+    } 
+
+    #body-container { 
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+    #sidebar {
+        width: 7.25em;
+    }
+
+    #sidebar a {
+        font-size: 1em;
+        margin-left: 0;
+        
+    }
+}
+/* <<<<<<< MOBILE MODE >>>>>>>> */ 
+
+@media (max-width: 480px) {
+    #body-container { 
+        flex-flow: row wrap;
+    }
+}
+
+/* 
+<<<< REFERENCES >>>>
+
+Author/Editor: CSS-Tricks, (2013), A Complete Guide to Flexbox [online]. Place of publication: css-tricks.com Available from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ [12.12.2018]
+Author: Ahmet Suiek, FLAT UI COLORS 2[online]. Place of publication: flatuitcolors.com. Available from: https://flatuicolors.com/ [08.11.2018]
+Author/Editor: Font-Awesome, home[online] Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/home?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, hile-alt[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/file-alt?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, book-open[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/book-open?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, briefcase[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/briefcase?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, chalkboard-teacher[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/chalkboard-teacher?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, search[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/search?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, bars[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/bars?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, Facebook[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/facebook?style=brands [22.11.2018]
+Author/Editor: Font-Awesome, twitter-square[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/twitter-square?style=brands [22.11.2018]
+Author/Editor: Font-Awesome, Pinterest-square[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/pinterest-square?style=brands [22.11.2018]
+Author/Editor: Font-Awesome, phone-square[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/phone-square?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, map-marked-alt[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/map-marked-alt?style=solid [22.11.2018]
+Author/Editor: Font-Awesome, envelope[online]. Place of publication: fontawesome.com. Available From: https://fontawesome.com/icons/envelope?style=solid[22.11.2018]
+Author/Editor: Google-Fonts, Open Sans Roboto[online] Place of publication: fonts.google.com Available From: https://fonts.google.com/?query=Robot&selection.family=Open+Sans|Roboto [29.11.2018]
+*/

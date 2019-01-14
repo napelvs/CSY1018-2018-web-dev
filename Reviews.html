@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reviews Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Logo -->
+    <header>
+        <a href="index.html"><img id="logo" src="Content-images/thedistrict.png" alt="The Game District Logo"> </a>   
+    </header>
+
+    <!-- Bar START-->
+    <div class="page-bar">
+
+        <!-- Dropdown menu -->
+        <a><i id="dropdown-menu" class="fas fa-bars"></i></a>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input class="search-txt" type="text" name="Search" placeholder="Search ...">
+            <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Bar END-->
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="show-sidebar">
+            <a href="index.html">Landing <i id="home-icon" class="fas fa-home"></i> </a>
+            <a href="reviews.html" class="active">Reviews <i id="reviews-icon" class="fas fa-file-alt"></i> </a>
+            <a href="glossary.html">Glossary <i id="glossary-icon" class="fas fa-book-open"></i></a>
+            <a href="jobs.html">Jobs <i id="jobs-icon" class="fas fa-briefcase"></i></a>
+            <a href="tutorials.html">Tutorials <i id="tutorials-icon" class="fas fa-chalkboard-teacher"></i></a>
+        </div>
+
+        <!-- CONTENT START -->
+
+        <div>
+                <div class="reviews_container">
+                    <article class="reviews_text"> 
+                        <div class="reviews_title reviews_intro"> Reviews </div>
+                        <div class="reviews_title"> CodePen </div>
+                              When it comes to web resources CodePen is extremely helpful as its chocked full of code and example of how said code works,
+                            which is useful because people can use it to improve their coding ability as well as learn how certain code works and when 
+                            it’s appropriate to use said code. It’s also worth mentioning that all the code examples on CodePen were created by people 
+                            with the express purpose of helping others with issues regarding code. CodePen is also extremely easy to use, this is because 
+                            the user only needs to type what they are looking for into the search bar in order to get a list of different scenarios regarding 
+                            what they searched for. For example, if someone wanted to find out about flex boxes then they can simply type flex box into the search 
+                            bar and they will be greeted with a wide rand of scenarios where flex boxes have been used.
+                    </article>
+                    <article class="reviews_text">
+                            <div class="reviews_title"> MDN Web Docs </div>
+                               MDN web docs is a very useful tool as it’s full of information about many different pieces of code as well as examples of how the 
+                            code needs to be structured in order for it to work. Now MDN web docs is useful because people can use it to improve their coding 
+                            ability as well as giving the user an understanding as to why they should use the code they are viewing. It should be mentioned that 
+                            the information that is present on MDN web docs is very reliable as the site is run by Mozilla the same Mozilla that owns Firefox the 
+                            web browser. It’s also important to mention that MDN web docs is very easy to use as it has a search bar function, which means that 
+                            anyone using MDN web docs only needs to enter what they want to find into the search bar in order to find what they want. For example, 
+                            if the user wanted to find information regarding media queries then all they would need to do is enter it into the search bar.
+                        </article>
+                </div>
+            </div>
+
+            
+
+        <!-- Footer START -->
+        <footer>
+            <!-- Wrapper -->
+           <div id="body-container"> 
+               <!-- Contact Us LEFT BLOCK -->
+                <div id="contact-us"> 
+                    <h3> Contact Us: <br/> </h3> 
+                    <a href="#"><i id="phone-icon" class="fas fa-phone-square"></i> 07467127035 </a> <br/>
+                    <a href="#"><i id="maps-icon" class="fas fa-map-marked-alt"></i>  University Drive, Northampton NN1 5PH </a> <br/>
+                    <a href="#"><i id="envelope-icon" class="fas fa-envelope"></i> games.district@outlook.co.uk </a>
+                </div>
+
+                <!-- Quick Links CENTER BLOCK -->
+                <div id="quick-links">  
+                    <h3> Quick Links: <br/> </h3> 
+                    <a href="index.html"> Homepage </a>
+                    <a href="jobs.html"> Jobs </a>
+                    <a href="glossary.html"> Glossary </a>
+                    <a href="Reviews.html"> Reviews </a>
+                    <a href="tutorials.html"> Tutorials </a>
+                </div>
+
+                <!-- Social Media RIGHT BLOCK -->
+                <div id="social-media"> 
+
+                    <h3> Follow Us On:<br/> </h3> 
+                    <a href="#"><i id="facebook-icon" class="fab fa-facebook"></i>Facebook</a> <br/>
+
+                    <a href="#"><i id="twitter-icon" class="fab fa-twitter-square"> </i>Twitter</a> <br/>
+
+                    <a href="#"><i id="pinterest-icon" class="fab fa-pinterest-square"> </i> Pinterest </a>
+
+                </div>
+           </div>
+        </footer>
+        <!-- Footer END -->
+
+        
+        <!-- jQuery Core 3.3.1 -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <!-- Hamburger menu, on click navigation toggle -->
+        <script>
+        $(document).ready(function(){
+        $("#dropdown-menu").click(function(){
+            $(".show-sidebar").toggle();
+            });
+        });
+
+        </script>
+
+</body>
+</html>

@@ -1,14 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <meta charset="utf-8">
+    <title> Index Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    <p>asdoahsodhaosdhoashdoahsodhasdioi</p>
+
+    <!-- Logo -->
+    <header>
+        <a href="index.html"><img id="logo" src="Content-images/thedistrict.png" alt="The Game District Logo"> </a>
+    </header>
+
+    <!-- Bar START-->
+    <div class="page-bar">
+
+        <!-- Dropdown menu -->
+        <a><i id="dropdown-menu" class="fas fa-bars"></i></a>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input class="search-txt" type="text" name="Search" placeholder="Search ...">
+            <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Bar END-->
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="show-sidebar">
+            <a href="index.html" class="active">Landing <i id="home-icon" class="fas fa-home"></i> </a>
+            <a href="reviews.html">Reviews <i id="reviews-icon" class="fas fa-file-alt"></i> </a>
+            <a href="glossary.html">Glossary <i id="glossary-icon" class="fas fa-book-open"></i></a>
+            <a href="jobs.html">Jobs <i id="jobs-icon" class="fas fa-briefcase"></i></a>
+            <a href="tutorials.html">Tutorials <i id="tutorials-icon" class="fas fa-chalkboard-teacher"></i></a>
+        </div>
+
+        <!-- CONTENT START -->
+
+        <ul class="cards">
+                <li class="cards__item">
+                  <div class="card card-website-intro">
+                    <div class="card__content">
+                      <div class="card__title"> The Game District: Your place to be.</div>
+                      <p class="card__text"> Here at 'The Game District', we deliver everyday most wanted games related news, reviews, glossary, jobs and tutorials for every gamer out there! Call your friends and let them know about our fast growing community of talented and dedicated gamers. </p>
+                      <div class="card__title"> Our team: </div>
+                      <p class="card__text"> Currently formed by five ambitious member, doing everything they can to mantain 'The Game District' news site updated. While James is responsible for the team organisation, 
+                        Dan does everything he can to mantain the other developers enthusiam for the project and guide them to become seniors. Vladimar is responsible for the back end of the website and Joey together 
+                        with Michael are in charge of website's design.</p>
+                      <div class="card_image_content">
+                      <div class="card__image"> <img src="Content-images/Dan.jpg" alt="team-member-Dan-Pavel-Sinkovicz"> <br/> Dan Pavel Sinkovicz <br/> Senior Web Developer</div>
+                      <div class="card__image"> <img src="Content-images/James.jpg" alt="team-member-James-Hogg"> <br/> James Hogg Web <br/> Devolpment lead</div>
+                      <div class="card__image"> <img src="Content-images/Vladimar.jpg" alt="team-member-Vladimar-Kebeng"> <br/> Vladimar Kebeng <br/> Back End Web <br/> Developer </div>
+                      <div class="card__image"> <img src="Content-images/Michael.jpg" alt="team-member-Michael-Scott"> <br/> Michael Scott <br/> Junior Web Developer</div>
+                      <div class="card__image"> <img src="Content-images/Joey.jpg" alt="team-member-Joseph-Doy"> <br/> Joseph Doy <br/> Front End Developer</div>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card ">
+                    <div class="card__image"> <img src="Content-images/caspar-rubin-704475-unsplash.jpg" alt="playstation-controller"> </div>
+                    <div class="card__content">
+                      <div class="card__title">PlayStation Controllers</div>
+                      <p class="card__text">According to some recent studies, LADBible confirms Playstation controllers being better than Xbox ones.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image"> <img src="Content-images/jeshoots-com-250229-unsplash.jpg" alt="two-friends-playing-fifa-on-playstation"> </div>
+                    <div class="card__content">
+                      <div class="card__title">Gaming Friends</div>
+                      <p class="card__text"> Recently, some studies confirmed that friends who meet to play games have a stronger connection than any others.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image"> <img src="Content-images/sean-do-782269-unsplash.jpg" alt="boy-playing-on-pc"> </div>
+                    <div class="card__content">
+                      <div class="card__title">PC Gaming</div>
+                      <p class="card__text"> Is estimated that PC gaming will be the most popular in the next 10 to 20 years. This is due to the hardware power and options compared to Xbox or Playstation.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card ">
+                    <div class="card__image"> <img src="Content-images/elias-castillo-658757-unsplash.jpg" alt=""> </div>
+                    <div class="card__content">
+                      <div class="card__title">Gameboy </div>
+                      <p class="card__text"> Some studies revealed that the Gameboy was the most important console that has ever been made. This led to the creation consoles such as Xbox and Playstation.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card ">
+                    <div class="card__image"> <img src="Content-images/uriel-soberanes-794026-unsplash.jpg" alt=""> </div>
+                    <div class="card__content">
+                      <div class="card__title">Virtual Reality</div>
+                      <p class="card__text"> Since the first appearance of VR in the real world, gamers have the opportunity to join more immersive games that are closer to immitate reality.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card ">
+                    <div class="card__image"> <img src="Content-images/mike-meyers-791389-unsplash.jpg" alt=""> </div>
+                    <div class="card__content">
+                      <div class="card__title"> Completely White Controller</div>
+                      <p class="card__text">After many requests from the Playstaion community, here it is, the all white controller.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+
+        <!-- Footer START -->
+        <footer>
+            <!-- Wrapper -->
+           <div id="body-container"> 
+               <!-- Contact Us LEFT BLOCK -->
+                <div id="contact-us"> 
+                    <h3> Contact Us: <br/> </h3> 
+                    <a href="#"><i id="phone-icon" class="fas fa-phone-square"></i> 07467127035 </a> <br/>
+                    <a href="#"><i id="maps-icon" class="fas fa-map-marked-alt"></i>  University Drive, Northampton NN1 5PH </a> <br/>
+                    <a href="#"><i id="envelope-icon" class="fas fa-envelope"></i> games.district@outlook.co.uk </a>
+                </div>
+
+                <!-- Quick Links CENTER BLOCK -->
+                <div id="quick-links">  
+                        <h3> Quick Links: <br/> </h3> 
+                        <a href="index.html"> Homepage </a>
+                        <a href="jobs.html"> Jobs </a>
+                        <a href="glossary.html"> Glossary </a>
+                        <a href="Reviews.html"> Reviews </a>
+                        <a href="tutorials.html"> Tutorials </a>
+                </div>
+
+                <!-- Social Media RIGHT BLOCK -->
+                <div id="social-media"> 
+
+                    <h3> Follow Us On:<br/> </h3> 
+                    <a href="#"><i id="facebook-icon" class="fab fa-facebook"></i>Facebook</a> <br/>
+
+                    <a href="#"><i id="twitter-icon" class="fab fa-twitter-square"> </i>Twitter</a> <br/>
+
+                    <a href="#"><i id="pinterest-icon" class="fab fa-pinterest-square"> </i> Pinterest </a>
+
+                </div>
+           </div>
+        </footer>
+        <!-- Footer END -->
+
+        
+        <!-- jQuery Core 3.3.1 -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <!-- Hamburger menu, on click navigation toggle -->
+        <script>
+        $(document).ready(function(){
+        $("#dropdown-menu").click(function(){
+            $(".show-sidebar").toggle();
+            });
+        });
+
+        </script>
+
 </body>
 </html>
